@@ -1,15 +1,21 @@
 package br.dev.diego.dsdelivery.entities;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
+@Entity
+@Table(name = "tb_product")
 public class Product implements Serializable {
+    private static final long serialVersionUID = 1L;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private Double price;
     private String description;
-    private String imgUri;
+    private String imageUri;
 
     public Product(){
     }
@@ -19,7 +25,7 @@ public class Product implements Serializable {
         this.name = name;
         this.price = price;
         this.description = description;
-        this.imgUri = imgUri;
+        this.imageUri = imgUri;
     }
 
     public Long getId(){
@@ -55,11 +61,11 @@ public class Product implements Serializable {
     }
 
     public String getImgUri(){
-        return imgUri;
+        return imageUri;
     }
 
     public void setImgUri(String imgUri){
-        this.imgUri = imgUri;
+        this.imageUri = imgUri;
     }
 
     @Override

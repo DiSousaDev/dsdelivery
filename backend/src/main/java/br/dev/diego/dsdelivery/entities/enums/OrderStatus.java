@@ -1,6 +1,6 @@
 package br.dev.diego.dsdelivery.entities.enums;
 
-public enum Status {
+public enum OrderStatus {
 
     PENDING, DELIVERED;
 
