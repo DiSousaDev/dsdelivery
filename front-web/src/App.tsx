@@ -1,14 +1,10 @@
 import './App.css';
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
+import Routes from "./Routes";
 
 function App() {
     return (
-        <>
-            <Navbar />
-            <Home />
-        </>
-);
+        <Routes />
+    );
 }
 
 export default App;
