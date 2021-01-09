@@ -1,8 +1,11 @@
 import './styles.css';
+import StepsHeader from "../../components/StepsHeader";
 
 const Orders = () => {
     return (
-      <h1>Orders</h1>
+        <div className="orders-container">
+            <StepsHeader />
+        </div>
     );
 }
 
