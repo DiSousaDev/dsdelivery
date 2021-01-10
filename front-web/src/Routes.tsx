@@ -2,6 +2,7 @@ import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import Orders from "./pages/Orders";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const Routes = () => (
     <BrowserRouter>
@@ -14,6 +15,7 @@ const Routes = () => (
                 <Orders />
             </Route>)
         </Switch>
+        <Footer />
     </BrowserRouter>
 );
 
